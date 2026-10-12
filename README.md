@@ -45,6 +45,7 @@ python readmission_risk.py
 ```bash
 streamlit run streamlit_app.py
 ```
+[Steamlit demo video](./media/readmission-risk-steamlitDemo.mp4)
 
 Enter a fictional patient in the sidebar to see the predicted risk, the action tier, a per-patient breakdown of what raises or lowers risk, and a what-if scenario (follow-up scheduled plus better adherence). A second tab compares the two models on AUROC, Brier score, and alert burden. Switching to the logistic baseline shows how a model can rank patients reasonably yet give inflated probabilities.
 
@@ -66,4 +67,4 @@ Sample results (seed 42): gradient boosting AUROC about 0.80 with a Brier score 
 
 ## AI assistance disclosure
 
-Per the assignment note, this project was designed, coded, tested, and documented with help from an LLM (Claude) and reviewed by the author.
+Per the assignment note, this project was created with help from an LLM (Claude) and reviewed by the author.
