@@ -40,6 +40,14 @@ python readmission_risk.py
 # optional: python readmission_risk.py --patients 8000 --seed 7
 ```
 
+### Interactive demo (Streamlit)
+
+```bash
+streamlit run streamlit_app.py
+```
+
+Enter a fictional patient in the sidebar to see the predicted risk, the action tier, a per-patient breakdown of what raises or lowers risk, and a what-if scenario (follow-up scheduled plus better adherence). A second tab compares the two models on AUROC, Brier score, and alert burden. Switching to the logistic baseline shows how a model can rank patients reasonably yet give inflated probabilities.
+
 Sample results (seed 42): gradient boosting AUROC about 0.80 with a Brier score of 0.082. The top driver is prior admissions, followed by length of stay.
 
 ## Limitations
